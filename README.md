@@ -10,4 +10,4 @@ docker-compose run mahout
 ```
 
 Try an example:
-- [Playing with Mahout’s Spark Shell](https://mahout.apache.org/docs/latest/tutorials/samsara/play-with-shell.html)
+- [Playing with Mahout's Spark Shell](https://mahout.apache.org/docs/latest/tutorials/samsara/play-with-shell.html)
