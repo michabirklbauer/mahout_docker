@@ -1,0 +1,4 @@
+MAHOUT_HOME=/apache/mahout
+MAVEN_HOME=/apache/maven
+HADOOP_HOME=/apache/hadoop
+SPARK_HOME=/apache/spark

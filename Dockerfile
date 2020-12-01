@@ -38,10 +38,10 @@ RUN mv hadoop-3.2.1/ hadoop
 RUN export HADOOP_HOME=/apache/hadoop
 
 # Getting Apache Spark
-RUN wget https://mirror.klaus-uwe.me/apache/spark/spark-3.0.0-preview2/spark-3.0.0-preview2-bin-hadoop3.2.tgz
-RUN tar -xzvf spark-3.0.0-preview2-bin-hadoop3.2.tgz
-RUN rm spark-3.0.0-preview2-bin-hadoop3.2.tgz
-RUN mv spark-3.0.0-preview2-bin-hadoop3.2/ spark
+RUN wget https://mirror.klaus-uwe.me/apache/spark/spark-3.0.1/spark-3.0.1-bin-hadoop3.2.tgz
+RUN tar -xzvf spark-3.0.1-bin-hadoop3.2.tgz
+RUN rm spark-3.0.1-bin-hadoop3.2.tgz
+RUN mv spark-3.0.1-bin-hadoop3.2/ spark
 RUN export SPARK_HOME=/apache/spark
 
 # Running Mahout with Spark
