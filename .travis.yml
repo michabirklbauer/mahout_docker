@@ -5,7 +5,7 @@ services:
 
 script:
   - echo "$REGISTRY_PASSWORD" | docker login --username $REGISTRY_USER --password-stdin
-  - docker build -f Dockerfile -t michabirklbauer/mahout:latest ./
+  - docker build -f Dockerfile --quiet -t michabirklbauer/mahout:latest ./
   - GIT_SHA="$(git rev-parse --short HEAD)"
   - docker tag michabirklbauer/mahout:latest michabirklbauer/mahout:$GIT_SHA
   - docker push michabirklbauer/mahout:$GIT_SHA
