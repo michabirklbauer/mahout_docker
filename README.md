@@ -3,11 +3,23 @@
 Running [Apache Mahout](https://mahout.apache.org/) in [Docker](https://www.docker.com/).
 
 The following will run Mahout in a Spark shell:
-```bash
-git clone https://github.com/t0xic-m/mahout_docker.git
-cd mahout_docker
-docker-compose run mahout
-```
+
+* **Docker Hub:**
+
+  This image is also available on [Docker Hub](https://hub.docker.com/r/michabirklbauer/mahout):
+  ```bash
+  docker pull michabirklbauer/mahout:latest
+  docker run --env-file env_variables.txt -it michabirklbauer/mahout:latest
+  ```
+
+* **Building locally from Dockerfile:**
+
+  To build locally, clone the repository and run the docker-compose file:
+  ```bash
+  git clone https://github.com/t0xic-m/mahout_docker.git
+  cd mahout_docker
+  docker-compose run mahout
+  ```
 
 Try an example:
 - [Playing with Mahout's Spark Shell](https://mahout.apache.org/docs/latest/tutorials/samsara/play-with-shell.html)
