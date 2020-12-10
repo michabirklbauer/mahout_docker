@@ -6,7 +6,7 @@ version: '3'
 services:
   mahout:
     build: .
-    image: michabirklbauer/mahout:latest
+    image: mahout
     environment:
       - MAHOUT_HOME=/apache/mahout
       - MAVEN_HOME=/apache/maven
