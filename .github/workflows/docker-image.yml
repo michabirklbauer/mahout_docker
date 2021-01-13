@@ -1,0 +1,25 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: |
+        echo ${{ secrets.DOCKER_PASSWORD }} | docker login --username michabirklbauer --password-stdin
+        docker build . --file Dockerfile --tag michabirklbauer/mahout:latest
+        docker push michabirklbauer/mahout:latest
+        GIT_SHA="$(git rev-parse --short HEAD)"
+        docker tag michabirklbauer/mahout:latest michabirklbauer/mahout:$GIT_SHA
+        docker push michabirklbauer/mahout:$GIT_SHA
+        
