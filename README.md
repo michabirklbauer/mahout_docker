@@ -9,16 +9,17 @@ The following will run Mahout in a Spark shell:
   This image is also available on [Docker Hub](https://hub.docker.com/r/michabirklbauer/mahout):
   ```bash
   docker pull michabirklbauer/mahout:latest
-  docker run --env-file env_variables.txt -it michabirklbauer/mahout:latest
+  docker run -it michabirklbauer/mahout:latest
   ```
 
 * **Building locally from Dockerfile:**
 
-  To build locally, clone the repository and run the docker-compose file:
+  To build locally, clone the repository and run docker build:
   ```bash
   git clone https://github.com/t0xic-m/mahout_docker.git
   cd mahout_docker
-  docker-compose run mahout
+  docker build . -t mahout
+  docker run -it mahout
   ```
 
 Try an example:
