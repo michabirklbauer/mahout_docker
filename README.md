@@ -31,4 +31,4 @@ The Docker image runs the following Apache services:
 - [Apache Mahout 0.14.2](https://mahout.apache.org/)
 - [Apache Maven 3.6.3](https://maven.apache.org/)
 - [Apache Hadoop 3.2.1](https://hadoop.apache.org/)
-- [Apache Spark 3.0.1](https://spark.apache.org/)
+- [Apache Spark 3.1.1](https://spark.apache.org/)
