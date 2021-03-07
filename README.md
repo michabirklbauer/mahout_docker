@@ -16,7 +16,7 @@ The following will run Mahout in a Spark shell:
 
   To build locally, clone the repository and run docker build:
   ```bash
-  git clone https://github.com/t0xic-m/mahout_docker.git
+  git clone https://github.com/michabirklbauer/mahout_docker.git
   cd mahout_docker
   docker build . -t mahout
   docker run -it mahout

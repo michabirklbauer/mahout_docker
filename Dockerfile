@@ -12,7 +12,7 @@ RUN mkdir apache
 WORKDIR apache
 
 # Getting Apache Mahout - this is my own fork since it needed some tuning
-RUN wget -nv https://github.com/t0xic-m/mahout/archive/mahout-14.2.tar.gz
+RUN wget -nv https://github.com/michabirklbauer/mahout/archive/mahout-14.2.tar.gz
 RUN tar -xzvf mahout-14.2.tar.gz > tmp
 RUN rm mahout-14.2.tar.gz
 RUN mv mahout-mahout-14.2 mahout
